@@ -38,7 +38,6 @@ namespace ZbW.CarRentify.CarManagement.Api
         public CarDTO Get(Guid id)
         {
             var car = _carService.Get(id);
-
             return new CarDTO
             {
                 Id = car.Id,
